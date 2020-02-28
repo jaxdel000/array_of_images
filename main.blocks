@@ -1,0 +1,35 @@
+<xml xmlns="https://developers.google.com/blockly/xml"><variables><variable type="KIND_SpriteKind" id="?xRPAh:xjc|#.Wk:r%)K">Player</variable><variable type="KIND_SpriteKind" id="%HYULd8*V`(-kF8on%.)">Projectile</variable><variable type="KIND_SpriteKind" id="~@E`*P-$VDhomA?=yhb]">Food</variable><variable type="KIND_SpriteKind" id="^eBF2pMqnL=VQSw#-WIh">Enemy</variable><variable id="9=o`KXQvIwY7^q:%duoP">mySprite</variable><variable id="~Fxa{EK7,pXqUXh%K809">character_Images</variable><variable id="@Nrm{ky=4%Lp[o{KRX([">list</variable><variable id="Zq8.8Kra77{,aFpQOA!6">picture</variable><variable id="n}WAJY@66QmACG;cpxY5">duck</variable><variable id="%-6YlW`p=8`dHt,Y,|uy">count</variable></variables><block type="pxt-on-start" id="%e2^{7cwNFs.A-/.m@yn" x="0" y="0"><statement name="HANDLER"><block type="variables_set" id="McC7^TTlty-R4F`89?D}"><field name="VAR" id="@Nrm{ky=4%Lp[o{KRX([">list</field><value name="VALUE"><block type="lists_create_with" id="pjhPO0.YfQfMpQZ;X}b@" inline="false"><mutation items="6"/><value name="ADD0"><shadow type="math_number"><field name="NUM">1</field></shadow><block type="image_picker" id="bYl@+DaZ-U@-SzNHwuko"><field name="image">sprites.castle.skellyFront</field></block></value><value name="ADD1"><shadow type="math_number"><field name="NUM">2</field></shadow><block type="image_picker" id="5ot=kb[K6oYt(Rdtq|-K"><field name="image">sprites.castle.skellyWalkFront1</field></block></value><value name="ADD2"><shadow type="math_number"><field name="NUM">3</field></shadow><block type="image_picker" id="z0[n`ue#8T|3:03VENK:"><field name="image">sprites.castle.skellyAttackFront1</field></block></value><value name="ADD3"><shadow type="math_number"><field name="NUM">4</field></shadow><block type="image_picker" id="5#@}jv[r48CE^z5n:)Du"><field name="image">sprites.castle.skellyAttackFront3</field></block></value><value name="ADD4"><shadow type="math_number"><field name="NUM">5</field></shadow><block type="image_picker" id="UXYH*Ap5*c-U#**{6M{6"><field name="image">sprites.castle.skellyAttackFront4</field></block></value><value name="ADD5"><shadow type="math_number"><field name="NUM">6</field></shadow><block type="image_picker" id="R1A)m3nTMduE{eiP5xF/"><field name="image">sprites.castle.skellyFront</field></block></value></block></value><next><block type="variables_set" id="5:E[Ab4S1KZe;Z#[D(:U"><field name="VAR" id="n}WAJY@66QmACG;cpxY5">duck</field><value name="VALUE"><shadow type="math_number"><field name="NUM">0</field></shadow><block type="spritescreate" id="kAwCZmG*m%UW`2Qr6Rh]"><value name="img"><shadow type="screen_image_picker"><field name="img">img`
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+`</field></shadow><block type="lists_index_get" id="~[4(0Q`uu9xkkk^%Iz;/"><value name="LIST"><block type="variables_get" id="pXg}W%$X+/zz-ZUkI9x#"><field name="VAR" id="@Nrm{ky=4%Lp[o{KRX([">list</field></block></value><value name="INDEX"><shadow type="math_number" id="arcS^SF`]-X}NS[S{S[O"><field name="NUM">0</field></shadow></value></block></value><value name="kind"><shadow type="spritekind" id="Ty{zZb.g2Erx]-[D`IaX"><field name="MEMBER">Player</field></shadow></value></block></value></block></next></block></statement></block><block type="gameinterval" id="XotCdWZHLcim?%$)@Nd}" x="330" y="230"><value name="period"><shadow type="timePicker" id="8do,u]gFj?x;%rB!H_sR"><field name="ms">200</field></shadow></value><statement name="HANDLER"><block type="spritesetimage" id="|pPOmOMnyt[37T4oyu.-"><value name="sprite"><block type="variables_get" id="]7NjS7n(RML4k.kBLk?M"><field name="VAR" id="n}WAJY@66QmACG;cpxY5">duck</field></block></value><value name="img"><shadow type="screen_image_picker"><field name="img">img`
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+`</field></shadow><block type="lists_index_get" id="/wJ!nC,?jnaZ=Jea#SL-"><value name="LIST"><block type="variables_get" id="bNE!K#u[XU_u|_tq_si5"><field name="VAR" id="@Nrm{ky=4%Lp[o{KRX([">list</field></block></value><value name="INDEX"><shadow type="math_number"><field name="NUM">0</field></shadow><block type="math_modulo" id="7]Kpe?jW8Q_]PaaVz[x`"><value name="DIVIDEND"><shadow type="math_number"><field name="NUM">0</field></shadow><block type="variables_get" id="I+cI^BGW-AC/8Hst?34^"><field name="VAR" id="%-6YlW`p=8`dHt,Y,|uy">count</field></block></value><value name="DIVISOR"><shadow type="math_number"><field name="NUM">1</field></shadow><block type="lists_length" id="n(nJ!81_|!eQIu)9M%3S"><value name="VALUE"><block type="variables_get" id="W}#x(=Vn=W,Sxg!w6Nsk"><field name="VAR" id="@Nrm{ky=4%Lp[o{KRX([">list</field></block></value></block></value></block></value></block></value><next><block type="variables_change" id="lB+=-}kpmh]h;p}a$_6$"><field name="VAR" id="%-6YlW`p=8`dHt,Y,|uy">count</field><value name="VALUE"><shadow type="math_number" id="u^DGzJa]*)%Y`V}5MkNj"><field name="NUM">1</field></shadow></value></block></next></block></statement></block></xml>
